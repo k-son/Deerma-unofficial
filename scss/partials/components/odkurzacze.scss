@@ -1,0 +1,95 @@
+.odkurzacze-box {
+  @include page-box--2;
+
+  &__image-box {
+    @include image-box--3;
+  }
+
+  @include item-list;
+}
+
+.odkurzacze-box__item-box {
+
+  &--vc40 {
+
+    & .odkurzacze-box__image-box {
+      background-image: url(../img/odkurzacze/07.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    & .odkurzacze-box__image {
+      background-image: url(../img/odkurzacze/VC40m.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--vc20 {
+
+    & .odkurzacze-box__image-box {
+      background-image: url(../img/odkurzacze/VC20_LS02.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    & .odkurzacze-box__image {
+      background-image: url(../img/odkurzacze/vc20m.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--cm810 {
+
+    & .odkurzacze-box__image-box {
+      background-image: url(../img/odkurzacze/cm180.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    & .odkurzacze-box__image {
+      background-image: url(../img/odkurzacze/Deerma_CM800_on_white.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+  }
+
+  &--tj200 {
+
+    & .odkurzacze-box__image-box {
+      background-image: url(../img/odkurzacze/TJ200_03_LS.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    & .odkurzacze-box__image {
+      background-image: url(../img/odkurzacze/TJ200_01_LS.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--dx700 {
+
+    & .odkurzacze-box__image-box {
+      background-image: url(../img/odkurzacze/DX700girl.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    & .odkurzacze-box__image {
+      background-image: url(../img/odkurzacze/DX700.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+
+}
+

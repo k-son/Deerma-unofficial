@@ -1,0 +1,22 @@
+.faded-link {
+  color: var(--color-deerma-grey)
+}
+
+.decorative-bar {
+  width: 50%;
+  height: 1px;
+  transform: translateX(-5rem);
+  background:  var(--color-red);
+
+  @media only screen and (min-width: 1100px) {
+    transform: translateX(-7rem);
+  }
+  @media only screen and (max-width: 800px) {
+    transform: translateX(-3rem);
+  }
+
+}
+
+.display-none {
+  display: none;  //used in html
+}

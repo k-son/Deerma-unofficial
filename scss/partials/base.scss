@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*::selection {
+  background-color: var(--color-red);
+  color: var(--color-body);
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: 1050px) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: 900px) {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: var(--color-text);
+  background-color: var(--color-body);
+}

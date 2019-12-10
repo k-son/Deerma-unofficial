@@ -1,0 +1,79 @@
+.nawilzacze-box {
+  @include page-box--2;
+
+  &__image-box {
+    @include image-box--3;
+  }
+
+  @include item-list;
+}
+
+.nawilzacze-box__item-box {
+
+  &--f300 {
+
+    & .nawilzacze-box__image-box {
+      background-image: url(../img/nawilzacze/Deerma-F300_5_LS_ok.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    & .nawilzacze-box__image {
+      background-image: url(../img/nawilzacze/Deerma-F300_9_LS.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+  }
+
+  &--f500 {
+
+    & .nawilzacze-box__image-box {
+      background-image: url(../img/nawilzacze/Deerma-F500_01_LS.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    & .nawilzacze-box__image {
+      background-image: url(../img/nawilzacze/Deerma-F500_01-LS.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--f600 {
+
+    & .nawilzacze-box__image-box {
+      background-image: url(../img/nawilzacze/Deerma-F600_04_LS.jpg);
+      background-size: cover;
+      background-position: right;
+    }
+
+    & .nawilzacze-box__image {
+      background-image: url(../img/nawilzacze/Deerma_F600_02-LS.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &--f628 {
+
+    & .nawilzacze-box__image-box {
+      background-image: url(../img/nawilzacze/H628.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    & .nawilzacze-box__image {
+      background-image: url(../img/nawilzacze/Deerma-628S_01_LS.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+}
+
+

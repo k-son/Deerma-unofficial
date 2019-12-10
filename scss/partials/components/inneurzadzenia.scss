@@ -1,0 +1,60 @@
+.inneurzadzenia-box {
+  @include page-box--2;
+
+  &__image-box {
+    @include image-box--3;
+  }
+
+  @include item-list;
+}
+
+.inneurzadzenia-box__item-box {
+
+  &--hs007 {
+
+    & .inneurzadzenia-box__image-box {
+      background-image: url(../img/inneurzadzenia/DeermaHS006_1_LS.jpg);
+      background-size: cover;
+      background-position: left;
+    }
+
+    & .inneurzadzenia-box__image {
+      background-image: url(../img/inneurzadzenia/Deerma-HS006_19_LS.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+  }
+
+  &--tb500 {
+
+    & .inneurzadzenia-box__image-box {
+      background-image: url(../img/inneurzadzenia/TB500.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    & .inneurzadzenia-box__image {
+      background-image: url(../img/inneurzadzenia/TB500B.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+  }
+  
+  &--zq600 {
+
+    & .inneurzadzenia-box__image-box {
+      background-image: url(../img/inneurzadzenia/ZQ600.jpg);
+      background-size: cover;
+      background-position: left;
+    }
+
+    & .inneurzadzenia-box__image {
+      background-image: url(../img/inneurzadzenia/Deerma-ZQ600_06_LS.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+  }
+}

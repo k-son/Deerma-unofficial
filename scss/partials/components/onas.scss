@@ -1,0 +1,39 @@
+.onas-box {
+  @include page-box;
+
+  &__image-box {
+    @include image-box--2;
+    background: url(../img/o_nas.jpg) bottom;
+    background-size: cover;
+    background-position: right;
+  }
+  
+  &__image {
+
+  }
+}
+
+.onas {
+
+  &__h1 {
+    @include h1;
+
+    &__span {
+      display: block;
+      font-weight: 200;
+      margin-left: 6rem;
+    }
+  }
+
+  &__text {
+    @include margin-top-medium;
+
+    &__para {
+      @include text-format;
+
+      &:not(:last-of-type) {
+        margin-bottom: .8rem;
+      }
+    }
+  }
+}

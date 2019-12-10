@@ -1,0 +1,16 @@
+:root {
+  --color-text: #444;
+  --color-red: #ff0029;
+  --color-deerma-grey: #828286;
+  --color-body: #fff;
+  --color-faded-link: #adadad;
+
+  --padding-home-mobile: 3rem;
+  --margin: 5rem;
+
+  --top-bar-height: 9rem;
+
+  @media only screen and (max-width: 800px) {
+    --top-bar-height: 8rem;
+  }
+}

@@ -1,0 +1,214 @@
+@mixin nav-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 2.4rem;
+  padding-bottom: 1.6rem;
+  letter-spacing: -1.5px;
+
+  @media only screen and (max-width: 730px) {
+    padding-bottom: 0;
+  }
+}
+
+@mixin top-bar-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 2rem;
+  letter-spacing: -1px;
+}
+
+@mixin image-box {
+  height: 6.7rem;
+  width: 24rem;
+  border-radius: 2px;
+  overflow: hidden;
+
+  @media only screen and (max-width: 730px) {
+    width: 100%;
+  }
+}
+
+@mixin page-box {
+  margin-top: calc(var(--top-bar-height) + 5rem);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+@mixin page-box--2 {
+  margin-top: calc(var(--top-bar-height) + 5rem);
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin page {
+  min-width: 26rem;
+  max-width: 100%;
+  margin-bottom: 5rem;
+  padding: 0 3rem;
+}
+
+@mixin image-box--2 {
+  display: block;
+  height: 60rem;
+  width: 14rem;
+  border-radius: 2px;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-right: var(--margin);
+
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
+}
+
+@mixin image-box--3 {
+  display: block;
+  height: 30rem;
+  width: 14rem;
+  border-radius: 2px;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-right: var(--margin);
+
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
+}
+
+@mixin item-list {
+  &__item-box {
+    display: flex;
+
+    @media only screen and (max-width: 800px) {
+      justify-content: center;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__link {
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover > .odkurzacze-box__item::after,
+    &:hover > .nawilzacze-box__item::after,
+    &:hover > .inneurzadzenia-box__item::after {
+      width: 30rem;
+      width: 60%;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+
+    @media only screen and (max-width: 600px) {
+      align-items: center;
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      width: 16rem;
+      height: 1px;
+      background-color: var(--color-red);
+      position: absolute;
+      bottom: -.4rem;
+      left: 15rem;
+      transition: width .3s;
+
+      @media only screen and (max-width: 600px) {
+        left: 10rem;
+        bottom: -4px;
+      }
+      @media only screen and (max-width: 450px) {
+        left: 8rem;
+        bottom: -8px;
+      }
+    }
+  }
+
+  &__image {
+    height: 30rem;
+    width: 25rem;
+    margin-right: 3rem;
+  
+    @media only screen and (max-width: 600px) {
+      height: 30vw;
+      width: 25vw;
+      align-self: flex-end;
+    }
+
+    @media only screen and (max-width: 500px) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__description {
+    width: 45vw;
+    margin-bottom: 5rem;
+
+    @media only screen and (max-width: 800px) {
+      width: 50vw;
+    }
+
+    @media only screen and (max-width: 600px) {
+      width: 50vw;
+      margin-bottom: 0;
+    }
+  }
+
+  &__caption {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: 420px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+
+    @media only screen and (max-width: 420px) {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@mixin h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
+  line-height: 1.2;
+  letter-spacing: -.5px;
+  font-style: italic;
+}
+
+@mixin text-format {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+@mixin no-hover {
+  height: 0;
+  opacity: 0;
+}
+
+@mixin margin-top-medium {
+  margin-top: 5rem;
+}

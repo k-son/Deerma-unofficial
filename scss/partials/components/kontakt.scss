@@ -1,0 +1,77 @@
+.kontakt-box {
+  @include page-box;
+
+  &__image-box {
+    @include image-box--2;
+    height: 62rem;
+    background: url(../img/kontakt.jpg);
+    background-size: cover;
+  }
+
+  &__content {
+    width: 100%;
+  }
+}
+
+.form {
+  @include margin-top-medium;
+  
+  &__polityka-prywatnosci {
+    line-height: 3.2;
+    padding: .2rem 0;
+    border-bottom: 1px solid;
+
+    &:hover {
+      border-bottom: 1px solid var(--color-red);
+    }
+  }
+}
+
+.kontakt__table {
+  margin-top: 8rem;
+  font-size: 1.6rem;
+  line-height: .6;
+  border-collapse: separate;
+  border-spacing: 1.6rem;
+  transform: translateX(-2rem);
+
+  @media only screen and (max-width: 1050px) {
+    margin-top: 6.4rem;
+  }
+
+  @media only screen and (max-width: 900px) {
+    margin-top: 4.4rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    margin-top: 8.4rem;
+  }
+
+  @media only screen and (max-width: 500px) {
+    margin-top: 10rem;
+    font-size: 1.8rem;
+  }
+
+  &__row {
+
+    &:nth-of-type(odd) {
+
+      @media only screen and (max-width: 500px) {
+
+      
+      line-height: 1.4;
+      }
+    }
+  }
+
+  &__data {
+
+    &:nth-of-type(odd) {
+      color: var(--color-deerma-grey);
+    }
+
+    &:nth-of-type(even) {
+      
+    }
+  }
+}
