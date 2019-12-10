@@ -56,7 +56,7 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 			</body>
 			</html>";
 
-		if ( mail( $mailToSend, 'Wiadomość z formularza Roborock - ' . date( "d-m-Y" ), $message, $headers ) ) {
+		if ( mail( $mailToSend, 'Wiadomość z formularza Deerma.k-son.eu - ' . date( "d-m-Y" ), $message, $headers ) ) {
 			$return['status'] = 'ok';
 		} else {
 			$return['status'] = 'error';
