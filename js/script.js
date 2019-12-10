@@ -13,7 +13,7 @@ links.forEach(el => el.addEventListener('click', showModal))
 
 
 /// Accept privacy policy with 'enter' key
-/*
+
 const akceptacja = document.getElementById('akceptacja');
 
 function accept(e) {
@@ -23,4 +23,3 @@ function accept(e) {
 }
 
 akceptacja.addEventListener('keydown', accept);
-*/
