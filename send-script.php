@@ -1,7 +1,7 @@
 <?php
 error_reporting(0);
 
-$mailToSend = 'kontakt@deerma.com.pl';
+$mailToSend = 'kson.eu@gmail.com';
 
 if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 	$name       = $_POST['name'];
