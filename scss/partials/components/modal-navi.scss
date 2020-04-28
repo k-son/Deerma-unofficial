@@ -12,7 +12,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  //box-shadow: inset 0px 0px 177px -66px rgba(0,0,0,0.22);
 
   &__navi {
 
@@ -47,6 +46,10 @@
           font-size: 2rem;
           text-transform: uppercase;
           letter-spacing: 1px;
+
+          &:hover {
+            background-color: var(--color-faded-link);
+          }
 
           &:active {
             color: var(--color-red);
