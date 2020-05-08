@@ -311,10 +311,7 @@
 .form-send-success {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
-    //font-weight: bold;
-    //border: 1px solid #eee;
     color: #ff0029;
-    //background-color: white;
     margin: 2rem;
     max-width: 40rem;
 }
