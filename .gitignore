@@ -10,4 +10,5 @@ package-lock.json
 
 ._*
 
-*.css
+main.css
+main.min.css
